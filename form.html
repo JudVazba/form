@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link type="text/css" href="form.css" rel="stylesheet">
+       
+    </head>
+    <body>
+        
+        <fieldset id="caja">
+            <form id="formulario">
+            <fieldset>
+                <legend>Cliente</legend>
+               Nombre y Apellidos: <input type="text" id="nombre">
+               Dirección: <input type="text" id="direccion">
+               Código Postal <input type="number" id="cp">
+               País <input type = "text" id="pais">
+            </fieldset>
+
+            <fieldset>
+                <legend>Pedido</legend>
+                Modelo: <input type="text" id="modelo"><br>
+                Talla:<br>
+                <label for="S">
+                <input type="radio" id="s" name="talla" value="S">S<br>
+            </label>
+            <label for="m"> <input type="radio" id="m" name="talla" value="M">M</label><br>
+             <label for="l"><input type="radio" id="l" name="talla" value="L">L</label><br>
+             <label for="xl"><input type="radio" id="xl" name="talla" value="XL">XL</label><br>
+                Cantidad: <input type="number" id="cantidad">
+            </fieldset>
+            <button type="reset" id="resetear" onclick="borrar();" >Borrar Datos</button>
+            <button type="submit" id="enviar" onclick="pedido();">Enviar Formulario</button>
+            </form>
+        </fieldset>
+
+        <p id="r"></p>  
+             <script type="text/javascript"  src="form.js"></script>
+    </body>
+</html>
